@@ -34,12 +34,12 @@
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a href="index.html" class="font-bold">Home</a></li>
-                    <li><a class="font-bold">Services</a></li>
-                    <li><a class="font-bold">Portfolio</a></li>
-                    <li><a class="font-bold">Blogs</a></li>
-                    <li><a href="login.html" class="font-bold">Login</a></li>
-                    <li><a href="register.html" class="font-bold">Registration</a></li>
+                    <li><a href="index.html" class="font-bold hover:text-green-400">Home</a></li>
+                    <li><a class="font-bold hover:text-green-400">Services</a></li>
+                    <li><a class="font-bold hover:text-green-400">Portfolio</a></li>
+                    <li><a class="font-bold hover:text-green-400">Blogs</a></li>
+                    <li><a href="login.html" class="font-bold hover:text-green-400">Login</a></li>
+                    <li><a href="register.html" class="font-bold hover:text-green-400">Registration</a></li>
                 </ul>
             </div>
 
@@ -80,11 +80,12 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a class="font-extrabold">Home</a></li>
-                        <li><a class="font-normal">Services</a></li>
-                        <li><a class="font-normal">Portfolio</a></li>
-                        <li><a class="font-normal">Blogs</a></li>
-                    <li><a href="login.html" class="font-normal">Login</a></li>
+                        <li><a class="font-bold hover:text-green-400" href="index.html">Home</a></li>
+                        <li><a class="font-bold hover:text-green-400">Services</a></li>
+                        <li><a class="font-bold hover:text-green-400">Portfolio</a></li>
+                        <li><a class="font-bold hover:text-green-400">Blogs</a></li>
+                        <li><a href="login.html" class="font-bold hover:text-green-400">Login</a></li>
+                        <li><a href="register.html" class="font-bold hover:text-green-400">Registration</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,36 +93,44 @@
 
     <!-- registration page contents ====================================== -->
 
-<form class="max-w-sm mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg my-10">
-    <h2 class="text-2xl font-semibold text-center mb-4">Registration</h2>
-
-    <div class="mb-4"></div>
-        <label for="name" class="block text-sm font-medium text-gray-700">Username</label>
-        <input type="name" id="name" name="name" required
-            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+<section class="bg-slate-200">
+    <div class=" md:flex my-2 items-center sm:flex-col md:flex-row justify-around sm:w-7/12 md:w-9/12 lg:w-6/12 mx-auto ">
+        <form class="mt-10 p-10 bg-white shadow-lg rounded-lg my-10">
+            <h2 class="text-2xl font-semibold text-center mb-4">Registration</h2>
+    
+            <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700">Username</label>
+            <input type="name" id="name" name="name" required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+        
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" name="password" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+        
+            <button type="submit"
+                class="w-full bg-[#ABEF5F] hover:bg-white hover:text-[#ABEF5F] border hover:border-[#ABEF5F] border-[#ABEF5F] text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                Sign Up
+            </button>
+        
+            <p class="text-sm text-gray-600 mt-3 text-center">
+                Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Login</a>
+            </p>
+        </form>
+        <div>
+            <img class="w-[300px]" src="./assets/login.svg" alt="">
+        </div>
     </div>
+</section>
 
-    <div class="mb-4">
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" id="email" name="email" required
-            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-    </div>
-
-    <div class="mb-4">
-        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-        <input type="password" id="password" name="password" required
-            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-    </div>
-
-    <button type="submit"
-        class="w-full bg-[#ABEF5F] hover:bg-white hover:text-[#ABEF5F] border hover:border-[#ABEF5F] border-[#ABEF5F] text-white font-semibold py-2 px-4 rounded-md transition duration-300">
-        Sign Up
-    </button>
-
-    <p class="text-sm text-gray-600 mt-3 text-center">
-        Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Login</a>
-    </p>
-</form>
 
     <!-- registration page contents ====================================== -->
 
